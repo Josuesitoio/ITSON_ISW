@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción - Ingeniería en Software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlaces a hojas de estilo y fuentes -->
+    <link rel="stylesheet" href="css/unidad1.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <div class="logo">
+            <a href="https://www.itson.mx" target="_blank" class="logo">
+                
+                    <img src="img/itsonLogo.png" alt="Logo ITSON">
+                     </a>  
+                     Ingeniería en Software
+                </div>
+        <ul class="nav-links">
+            <li><a href="index.html" >Inicio</a></li>
+            <li><a href="Unidad1.html" class="active">Introducción</a></li>
+            <li><a href="Unidad2.html">Ciclo de Vida</a></li>
+            <li><a href="Unidad3.html">Corrientes y Modelos de Desarrollo</a></li>
+            <li><a href="VideoJuegos.html">Videojuegos</a></li>
+        </ul>
+        <div class="burger">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Sección de contenido principal -->
+    <main>
+        <!-- Hero con fondo animado -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Introducción</h1>
+                <p>Proyecto de Ingeniería de Software</p>
+            </div>
+            <canvas id="backgroundCanvas"></canvas>
+        </section>
+
+        <!-- Sección de contenido con tarjetas -->
+        <section class="content">
+            <div class="interactive-section">
+                <h2>Explora los Conceptos Clave</h2>
+                <div class="card-container">
+                    <!-- Tarjetas con modales -->
+                    <div class="card" data-content="concepto">
+                        <div class="card-front">
+                            <h3>Concepto de Ingeniería de Software</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>La ingeniería de software es una disciplina...</p>
+                            <button class="btn-more" data-modal="conceptoModal">Leer más</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="disciplina">
+                        <div class="card-front">
+                            <h3>Disciplina en el Campo de la Computación</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Aplica principios y técnicas de la informática...</p>
+                            <button class="btn-more" data-modal="disciplinaModal">Leer más</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="tendencias">
+                        <div class="card-front">
+                            <h3>Tendencias Actuales</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Descubre las tendencias más relevantes...</p>
+                            <button class="btn-more" data-modal="tendenciasModal">Explorar</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="clasificacion">
+                        <div class="card-front">
+                            <h3>Tipos de Software</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>El software tiene una clasificación...</p>
+                            <button class="btn-more" data-modal="clasificacionModal">Leer más</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="sistemasDeInformacion">
+                        <div class="card-front">
+                            <h3>Sistemas de Información</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Los sistemas de información cumplen una función...</p>
+                            <button class="btn-more" data-modal="sistemasDeInformacionModal">Leer más</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="compromisosEticos">
+                        <div class="card-front">
+                            <h3>Compromisos Éticos en el Desarrollo de Software</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Descubre los compromisos éticos...</p>
+                            <button class="btn-more" data-modal="compromisosEticosModal">Leer más</button>
+                        </div>
+                    </div>
+                    <div class="card" data-content="glosario">
+                        <div class="card-front">
+                            <h3>Glosario de Ingeniería en Software</h3>
+                        </div>
+                        <div class="card-back">
+                            <p>Descubre el significado de las palabras...</p>
+                            <button class="btn-more" data-modal="glosarioModal">Leer más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales -->
+    <div id="conceptoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Concepto de Ingeniería de Software</h2>
+            <p>La ingeniería de software es una disciplina que integra métodos, herramientas y técnicas para desarrollar software de calidad. A través de ella, se diseñan, construyen, prueban y mantienen sistemas complejos que cumplen funciones específicas.</p>
+            <p>La importancia de la ingeniería de software reside en su capacidad de crear soluciones confiables, seguras y eficientes, que son esenciales en áreas como la medicina, finanzas y tecnología. Sin este enfoque, el desarrollo de software carecería de rigor y previsibilidad, lo que impactaría la calidad.</p>
+            <p class="reference">Fuente: <a href="https://definicion.de/ingenieria-de-software/" target="_blank">Definición.de - Ingeniería de Software</a></p>
+            <div class="gallery-item">
+                <img src="img/imagenUnidad1.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="disciplinaModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Disciplina en el Campo de la Computación</h2>
+            <p>La ingeniería de software combina principios de la informática, matemáticas y ciencias de la ingeniería. Su objetivo principal es el desarrollo de sistemas fiables y robustos.</p>
+            <p>En el campo de la computación, esta disciplina permite la creación de aplicaciones que van desde simples sistemas de gestión hasta soluciones de inteligencia artificial. La planificación y el análisis detallado de cada componente son fundamentales para el éxito del proyecto.</p>
+            <p class="reference">Fuente: <a href="https://cultura-informatica.com/que-es-la-ingenieria-de-software/" target="_blank">Cultura Informática - ¿Qué es la Ingeniería de Software?</a></p>
+            <div class="gallery-item">
+                <img src="img/ImagenUnidad2.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tendenciasModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Tendencias en la Ingeniería de Software</h2>
+            
+            <ul>
+                <li><strong>Desarrollo Ágil:</strong> Enfoques como Scrum y Kanban mejoran la adaptabilidad en proyectos, permitiendo cambios rápidos y minimizando errores.</li>
+                <li><strong>DevOps:</strong> Automatiza el proceso de integración y entrega, mejorando la colaboración entre desarrollo y operaciones.</li>
+                <li><strong>Inteligencia Artificial:</strong> Optimiza el proceso de desarrollo, desde el análisis de código hasta la predicción de errores.</li>
+                <li><strong>Microservicios:</strong> Permite construir aplicaciones modulares, facilitando la escalabilidad y el mantenimiento.</li>
+            </ul>
+            <p class="reference">Fuente: <a href="https://www.ituser.es/it-trends/2023/08/principales-tendencias-tecnologicas-en-ingenieria-de-software-para-2024" target="_blank">IT Trends - Tendencias Tecnológicas en Ingeniería de Software para 2024</a></p>
+            <div class="gallery-item">
+                <img src="img/imagenUnidad3.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="clasificacionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Clasificación de Software</h2>
+            <p>El software se clasifica en categorías basadas en su propósito y función:</p>
+            <ul>
+                <li><strong>Software de Sistema:</strong> Controla el hardware, ejemplo: sistemas operativos.</li>
+                <li><strong>Software de Aplicación:</strong> Orientado al usuario final, como suites de oficina.</li>
+                <li><strong>Software de Desarrollo:</strong> Facilita la creación de software, como editores de código.</li>
+                <li><strong>Software Empotrado:</strong> Funciona en dispositivos específicos, como electrodomésticos inteligentes.</li>
+            </ul>
+            <p class="reference">Fuente: <a href="https://www.computerhope.com/jargon/s/software.htm" target="_blank">Computer Hope - Clasificación de Software</a></p>
+            <div class="gallery-item">
+                <img src="img/ImagenUnidad4.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sistemasDeInformacionModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Sistemas de Información</h2>
+            <p>Los sistemas de información apoyan la toma de decisiones en organizaciones. Procesan y almacenan datos, proporcionando análisis que facilitan la gestión de recursos y procesos.</p>
+            <p>Estos sistemas están presentes en sectores como educación, salud y finanzas, y ayudan a la organización a optimizar su rendimiento mediante reportes detallados y análisis predictivo.</p>
+            <p class="reference">Fuente: <a href="https://economipedia.com/definiciones/sistema-de-informacion.html" target="_blank">Economipedia - Sistemas de Información</a></p>
+            <div class="gallery-item">
+                <img src="img/imagenUnidad5.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="compromisosEticosModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Compromisos Éticos en el Desarrollo de Software</h2>
+            <p>La ética en el desarrollo de software incluye prácticas responsables, garantizando la seguridad y privacidad del usuario. Es crucial en el manejo de datos sensibles.</p>
+            <p>Además, los desarrolladores deben comprometerse a evitar prácticas engañosas, realizar pruebas exhaustivas y proteger a los usuarios de vulnerabilidades y mal uso de datos.</p>
+            <p class="reference">Fuente: <a href="https://www.computerworld.com/article/3434026/ethics-in-software-development.html" target="_blank">Computerworld - Ethics in Software Development</a></p>
+            <div class="gallery-item">
+                <img src="img/imagenUnidad6.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="glosarioModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Glosario de Ingeniería en Software</h2>
+            <p>Conoce términos comunes en ingeniería de software:</p>
+            <ul>
+                <li><strong>Algoritmo:</strong> Conjunto de instrucciones para resolver un problema.</li>
+                <li><strong>Depuración:</strong> Proceso de identificar y corregir errores.</li>
+                <li><strong>Repositorio:</strong> Lugar de almacenamiento de archivos de código.</li>
+                <li><strong>Framework:</strong> Entorno de desarrollo para simplificar la creación de aplicaciones.</li>
+            </ul>
+            <p class="reference">Fuente: <a href="https://www.ibm.com/docs/en/engineering-lifecycle-management/7.0.2?topic=glossary" target="_blank">IBM - Engineering Glossary</a></p>
+            <div class="gallery-item">
+                <img src="img/ImagenUnidad7.jpg" alt="Imagen ITSON 6">
+                <div class="gallery-caption">ITSON</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/unidad1.js"></script>
+</body>
+</html>
